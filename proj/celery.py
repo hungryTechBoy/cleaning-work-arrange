@@ -23,7 +23,7 @@ app.conf.update(
         'shovel_shit': {
             'task': 'tasks.send_shovel_shit_task',
             # 'schedule': crontab(minute=0, hour='21,22,23'),
-            'schedule': crontab(minute='36,37,38,39',hour='16'),
+            'schedule': crontab(minute='36,37,38,39,40,44,45,46,47',hour='16'),
             # 'schedule': timedelta(seconds=10),
 
         },
@@ -32,7 +32,9 @@ app.conf.update(
             'schedule': crontab(minute=0, hour='11,15,18,22', day_of_week='sat,sun'),
             # 'schedule': crontab(minute='*/1', hour='11,15,18,22,23', day_of_week='sat,sun'),
         }
-    }
+    },
+
+    CELERY_TIMEZONE = 'Asia/Shanghai'
 )
 
 if __name__ == '__main__':
