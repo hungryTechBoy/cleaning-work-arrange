@@ -13,8 +13,8 @@ from celery import shared_task
 user = email_addr = 'debo_better@sina.com'
 password = "d999e84aa9771497"
 on_dutier = ['yuiiwh@163.com', '421309234@qq.com', 'tiffanywa0925@163.com', '779519248@qq.com']
-# shoveler = {'779519248@qq.com': [4, 5, 6], 'tiffanywa0925@163.com': [2, 3],'yuiiwh@163.com':[0,1]}
-shoveler = {'779519248@qq.com': [0, 1, 4, 5, 6], 'tiffanywa0925@163.com': [2, 3]}
+shoveler = {'779519248@qq.com': [4, 5, 6], 'tiffanywa0925@163.com': [2, 3],'yuiiwh@163.com':[0,1]}
+# shoveler = {'779519248@qq.com': [0, 1, 4, 5, 6], 'tiffanywa0925@163.com': [2, 3]}
 
 # on_dutier = ['tiffanywa0925@163.com']
 # shoveler = {'tiffanywa0925@163.com': [2, 3, 6]}

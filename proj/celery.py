@@ -22,8 +22,8 @@ app.conf.update(
     CELERYBEAT_SCHEDULE={
         'shovel_shit': {
             'task': 'tasks.send_shovel_shit_task',
-            # 'schedule': crontab(minute=0, hour='21,22,23'),
-            'schedule': crontab(minute='36,37,38,39,40,44,45,46,47',hour='16'),
+            'schedule': crontab(minute=0, hour='21,22,23'),
+            # 'schedule': crontab(minute='36,37,38,39,40,44,45,46,47',hour='16'),
             # 'schedule': timedelta(seconds=10),
 
         },
